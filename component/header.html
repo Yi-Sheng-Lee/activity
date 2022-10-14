@@ -1,0 +1,60 @@
+<!-- Fix Header Start -->
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">
+            <img src="/img/walkingpotato.jpg" alt="">
+        </a>
+        <img src="/img/icon-16.svg" onclick="openMobileSearch();" class="search-icon hidden-lg hidden-md hidden-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas"
+                data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                data-fa-i2svg="">
+                <path fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                </path>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto" id="menu">
+                <li class="mg10 text-center"><a href="model.php?ID=11">精選文章</a></li>
+                <li class="mg10 text-center"><a href="model.php?ID=2">休閒市集</a></li>
+                <li class="mg10 text-center"><a href="model.php?ID=8">主題活動</a></li>
+                <li class="mg10 text-center"><a href="model.php?ID=1">藝文展覽</a></li>
+                <li class="mg10 text-center"><a href="model.php?ID=4">生活展訊</a></li>
+                <li class="mg10 text-center"><a href="model.php?ID=3">專屬好禮</a></li>
+                <li class="mg10 text-center"><a href="model.php?ID=9">獨家優惠</a></li>
+                <li class="mg10 text-center"><a href="model.php?ID=10">飛炫快訊</a></li>
+                <li class="mg10 text-center hidden-xs"><a
+                        href="https://ticket.activity.com.tw/booking/activity/member/login?next=https%3A%2F%2Fwww.activity.com.tw%2Fzh%2Fmemberlogin.php"><img
+                            src="/img/icon-17.svg" style="width:20px;"><span
+                            class="d-inline d-xl-none">會員專區</span></a></li>
+            </ul>
+            <div class="scrollbar-track scrollbar-track-y">
+                <div class="scrollbar-thumb scrollbar-thumb-y"></div>
+            </div>
+        </div>
+        <div class="col-12 hidden-lg hidden-sm hidden-md"
+            id="mobileSearch" style="margin-top:10px;padding:0;display:none;">
+            <form method="get" action="sq.php" class="search-input">
+                <input class="graybackonly" name="q" required>
+                <img src="/img/icon-16.svg" style="width:22px;position: absolute;top: 10px;left:10px;">
+                <button type="submit" id="mohin" class="mdmqs">搜尋</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    function openMobileSearch() {
+        if (document.getElementById('mobileSearch').style.display == "") {
+            document.getElementById('mobileSearch').style.display = 'none';
+        } else {
+            document.getElementById('mobileSearch').style.display = '';
+        }
+        Scrollbar.init(document.getElementById('#menu')), {
+            alwaysShowTracks: false
+        };
+    }
+</script>
+<!-- Fix Header End -->
