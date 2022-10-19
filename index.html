@@ -17,11 +17,14 @@
     <link rel="stylesheet" href="./css/smooth-scrollbar.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- js plugin -->
-    <script src="./js/jquery-3.6.1.min.js"></script>
+    <!-- <script src="./js/jquery-3.6.1.min.js"></script> -->
+    <script src="./js/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
     <script src="./js/bootstrap-Agency-6.0.3.js"></script>
     <script src="./js/flexslider.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fontawesome-all.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="./js/smooth-scrollbar.js"></script>
     <title>Document</title>
     <!-- Optional theme -->
@@ -35,7 +38,7 @@
             <a class="navbar-brand js-scroll-trigger" href="/">
                 <img src="/img/walkingpotato.jpg" alt="">
             </a>
-            <img src="/img/icon-16.svg" onclick="openMobileSearch();" class="search-icon hidden-lg hidden-md hidden-sm">
+            <img src="/img/icon/icon-16.svg" onclick="openMobileSearch();" class="search-icon hidden-lg hidden-md hidden-sm">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -59,36 +62,1574 @@
                     <li class="mg10 text-center"><a href="model.php?ID=10">飛炫快訊</a></li>
                     <li class="mg10 text-center hidden-xs"><a
                             href="https://ticket.activity.com.tw/booking/activity/member/login?next=https%3A%2F%2Fwww.activity.com.tw%2Fzh%2Fmemberlogin.php"><img
-                                src="/img/icon-17.svg" style="width:20px;"><span
+                                src="/img/icon/icon-17.svg" style="width:20px;"><span
                                 class="d-inline d-xl-none">會員專區</span></a></li>
                 </ul>
                 <div class="scrollbar-track scrollbar-track-y">
                     <div class="scrollbar-thumb scrollbar-thumb-y"></div>
                 </div>
             </div>
-            <div class="col-12 hidden-lg hidden-sm hidden-md"
-                id="mobileSearch" style="margin-top:10px;padding:0;display:none;">
+            <div class="col-12 hidden-lg hidden-sm hidden-md" id="mobileSearch"
+                style="margin-top:10px;padding:0;display:none;">
                 <form method="get" action="sq.php" class="search-input">
                     <input class="graybackonly" name="q" required>
-                    <img src="/img/icon-16.svg" style="width:22px;position: absolute;top: 10px;left:10px;">
+                    <img src="/img/icon/icon-16.svg" style="width:22px;position: absolute;top: 10px;left:10px;">
                     <button type="submit" id="mohin" class="mdmqs">搜尋</button>
                 </form>
             </div>
         </div>
     </nav>
-    <script>
-        function openMobileSearch() {
-            if (document.getElementById('mobileSearch').style.display == "") {
-                document.getElementById('mobileSearch').style.display = 'none';
-            } else {
-                document.getElementById('mobileSearch').style.display = '';
-            }
-            Scrollbar.init(document.getElementById('#menu')), {
-                alwaysShowTracks: false
-            };
-        }
-    </script>
     <!-- Fix Header End -->
+    <!-- Fix Flexslider Start -->
+    <section class="about-section about-style-5 " style="background-image:#fff;padding:0;">
+        <div class="container mb-30">
+            <div class="col-12 hidden-xs row banner-box">
+                <div id="banner" class="flexslider col-12" style="padding:0;">
+                    <ul class="slides">
+                        <li class="col-12 row flex-nowrap" style="margin: 0px;">
+                            <a
+                                href="https://ticket.activity.com.tw/booking/activity/event/62a80fd0041e87adf7b48b01-%E6%96%B0%E5%8B%95%E5%B8%82%E9%9B%86">
+                                <img src="https://www.activity.com.tw/UserFiles/worksImages/379189260.PNG"
+                                    style="height: calc(100vw * 0.37);">
+                            </a>
+                        </li>
+                        <li class="col-12 row flex-nowrap" style="margin: 0px;">
+                            <a
+                                href="https://ticket.activity.com.tw/booking/activity/event/62d80af5566f75fa12b6c595-%E5%8D%81%E5%A4%A7%E4%B8%BB%E9%A1%8C%E5%B8%82%E9%9B%86%E8%81%AF%E5%90%8D%E6%8A%BD%E7%8D%8E">
+                                <img src="https://www.activity.com.tw/UserFiles/worksImages/294793560.JPG"
+                                    style="height: calc(100vw * 0.37);">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fix Flexslider End -->
+    <!-- 精選文章 Start -->
+    <section class="about-section about-style-5 p2020" style="background-image:linear-gradient(180deg, #eee, #fff);">
+        <div class="container">
+            <div class="col-12"
+                style="border-radius: 3px;background:#E9A6C0;color:#fff;margin:20px 0px;box-shadow: 0px 0px 2px 2px #cccccc;">
+                <div style="padding:10px;font-weight:900;font-size:20px;">精選文章</div>
+                <div style="top: 5px;right: 5px;position: absolute;padding:10px;font-weight:400;font-size:14px;">
+                    <a style="color:#fff;" href="model.php?ID=11">More +</a>
+                </div>
+            </div>
+            <div class="col-12 row" style="margin:0;padding: 0;">
+                <div class="col-xl-8 col-lg-8 col-md-12 badboy">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=770&PID=11">
+                                <div class="lineline2" style="max-height:70px;min-height:70px; padding: 12px 0 0 12px;">
+                                    馬鈴薯出任務－台北當代藝術館MoCA【轉接器 Transistors】特展
+                                </div>
+                            </a>
+                            <div class="row col-12" style="padding-bottom: 12px;">
+                                <div class="col-12 col-xl-6 col-lg-6 col-md-12">
+                                    <a href="article1.php?ID=770&PID=11">
+                                        <div class="img article-img"
+                                            style="margin: 0;overflow-y: hidden;height:calc(100%);width: 100%;background-position: center;background-image: url(https://www.activity.com.tw/UserFiles/worksImages/images/abcdefg.jpg);overflow-y: hidden;border-radius: 5px 5px 0 0;background-repeat: no-repeat;background-size: contain;">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-xl-6 col-lg-6 col-md-12 article-info">
+                                    <div class="lineline1 line-break">
+                                        電晶體作為一個關鍵性組件，存在於我們身邊幾乎每一個電子設備中，它的數量在一支手機中就有近億個、在一臺電腦中更是以十億計。因其半導體的特性，電晶體既產生、亦控制著電流的傳導，可謂現代生命之血，更是我們文明脈動的能量通道。而最讓人警醒的是，無論形式或用途，此轉接形態能脫離人類控制地運作，一旦啓動，能量和訊號將自動且自由地流竄。
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 badboy">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <ul style="margin: 0; padding: 10px; list-style: none;">
+                            <li class="article-font lineline1 line-break-1">2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季</li>
+                            <li class="article-font lineline1 line-break-1">2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季</li>
+                            <li class="article-font lineline1 line-break-1">2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季</li>
+                            <li class="article-font lineline1 line-break-1">2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季</li>
+                            <li class="article-font lineline1 line-break-1">2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季</li>
+                            <li class="article-font lineline1 line-break-1">2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季2022臺北喵嗚季</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 精選文章 End -->
+    <!-- 休閒市集 Start -->
+    <section class="about-section about-style-5 p2020" style="background-image:linear-gradient(180deg, #eee, #fff);">
+        <div class="container">
+            <div class="col-12"
+                style="border-radius: 3px;background:#E9A6C0;color:#fff;margin:20px 0px;box-shadow: 0px 0px 2px 2px #cccccc;">
+                <div style="padding:10px;font-weight:900;font-size:20px;">休閒市集</div>
+                <div style="top: 5px;right: 5px;position: absolute;padding:10px;font-weight:400;font-size:14px;"><a
+                        style="color:#fff;" href="model.php?ID=2">More +</a></div>
+            </div>
+            <div class="col-12 row hidden-xs" style="margin:0;padding: 0;">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=520&PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/803524810.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+
+                            <div class="row dhreat"><img onclick="memberCollection(520);" src="/img/icon/收藏2.svg"
+                                    class="ghrae ihdn_520"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 14862</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=520&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">2022 海或 瘋市集
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 08 / 11 - 2022 / 08 / 17</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">海或。手作 Ocean Home</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">瘋市集 Wild Market</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=海或" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 海或</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=瘋市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 瘋市集</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=花蓮" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 花蓮</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=657&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/415442390.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+
+                            <div class="row dhreat"><img onclick="loginmember(657);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_657"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1057</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=657&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">大小事事吉 &amp; 荏苒市集
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 07 / 16 - 2022 / 07 / 17</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">台南市歸仁區光明街408號</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">大小事事吉 &amp; 荏苒市集</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=台南" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台南</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=荏苒市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 荏苒市集</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=628&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/784210210.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+
+                            <div class="row dhreat"><img onclick="loginmember(628);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_628"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1166</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=628&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">夏日ICE集
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 07 / 16 - 2022 / 07 / 17</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">台南南紡購物中心</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">夏日ICE集 愛市集</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=夏日ICE集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 夏日ICE集</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=愛市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 愛市集</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=台南" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台南</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=南紡" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 南紡</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=584&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/194249650.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+
+                            <div class="row dhreat"><img onclick="loginmember(584);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_584"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1366</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=584&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">下竹町老樹文創市集
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 07 / 16 - 2022 / 07 / 17</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">下竹町</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">下竹町</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=新竹" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 新竹</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=下竹町老樹" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 下竹町老樹</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=文創市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 文創市集</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=521&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/136072170.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+
+                            <div class="row dhreat"><img onclick="loginmember(521);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_521"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1022</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=521&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">駁二藝術特區-大義倉庫x高都青商會
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 07 / 16 - 2022 / 07 / 17</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">高雄駁二藝術特區</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">高雄市高都國際青年商會</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=駁二藝術特區" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 駁二藝術特區</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=大義倉庫" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 大義倉庫</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=高都青商會" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 高都青商會</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=高雄" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 高雄</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=517&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/964436720.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+
+                            <div class="row dhreat"><img onclick="loginmember(517);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_517"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1288</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=517&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">樂光 二部曲 民歌再起市集
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 07 / 16 - 2022 / 07 / 17</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">阿嬤妳看市集廊道 (台南開元公園)</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">兜市集</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=兜市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 兜市集</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash= 阿嬤妳看市集廊道" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 阿嬤妳看市集廊道</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=台南開元公園" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台南開元公園</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機 Slider Start -->
+            <div class="col-12 row hidden-sm hidden-lg hidden-md dqdw" style="margin:0;padding: 0;">
+                <div id="flexslider" class="flexslider jdmn col-12" style="padding: 0px;">
+                    <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                        <ul class="slides">
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=517&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/964436720.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+
+                                            <div class="row dhreat"><img onclick="loginmember(517);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_517" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1288</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">樂光 二部曲 民歌再起市集
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 07 / 16 - 2022 / 07 / 17
+                                                </div>
+                                                <div class="lineline3">
+                                                    兜市集
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=兜市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 兜市集</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash= 阿嬤妳看市集廊道" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 阿嬤妳看市集廊道</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=台南開元公園" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 台南開元公園</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=520&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/803524810.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+
+                                            <div class="row dhreat"><img onclick="loginmember(520);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_520" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 14862</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">2022 海或 瘋市集
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 08 / 11 - 2022 / 08 / 17
+                                                </div>
+                                                <div class="lineline3">
+                                                    瘋市集 Wild Market
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=海或" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 海或</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=瘋市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 瘋市集</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=花蓮" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 花蓮</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=657&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/415442390.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+
+                                            <div class="row dhreat"><img onclick="loginmember(657);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_657" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1057</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">大小事事吉 &amp; 荏苒市集
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 07 / 16 - 2022 / 07 / 17
+                                                </div>
+                                                <div class="lineline3">
+                                                    大小事事吉 &amp; 荏苒市集
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=台南" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 台南</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=荏苒市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 荏苒市集</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=628&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/784210210.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+
+                                            <div class="row dhreat"><img onclick="loginmember(628);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_628" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1166</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">夏日ICE集
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 07 / 16 - 2022 / 07 / 17
+                                                </div>
+                                                <div class="lineline3">
+                                                    夏日ICE集 愛市集
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=夏日ICE集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 夏日ICE集</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=愛市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 愛市集</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=台南" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 台南</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=南紡" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 南紡</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=584&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/194249650.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+
+                                            <div class="row dhreat"><img onclick="loginmember(584);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_584" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1366</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">下竹町老樹文創市集
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 07 / 16 - 2022 / 07 / 17
+                                                </div>
+                                                <div class="lineline3">
+                                                    下竹町
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=新竹" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 新竹</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=下竹町老樹" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 下竹町老樹</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=文創市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 文創市集</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=521&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/136072170.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+
+                                            <div class="row dhreat"><img onclick="loginmember(521);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_521" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1022</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">駁二藝術特區-大義倉庫x高都青商會
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 07 / 16 - 2022 / 07 / 17
+                                                </div>
+                                                <div class="lineline3">
+                                                    高雄市高都國際青年商會
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=駁二藝術特區" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 駁二藝術特區</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=大義倉庫" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 大義倉庫</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=高都青商會" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 高都青商會</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=高雄" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 高雄</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=517&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/964436720.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+
+                                            <div class="row dhreat"><img onclick="loginmember(517);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_517" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1288</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">樂光 二部曲 民歌再起市集
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 07 / 16 - 2022 / 07 / 17
+                                                </div>
+                                                <div class="lineline3">
+                                                    兜市集
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=兜市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 兜市集</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash= 阿嬤妳看市集廊道" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 阿嬤妳看市集廊道</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=台南開元公園" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 台南開元公園</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=520&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/803524810.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+
+                                            <div class="row dhreat"><img onclick="loginmember(520);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_520" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 14862</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">2022 海或 瘋市集
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 08 / 11 - 2022 / 08 / 17
+                                                </div>
+                                                <div class="lineline3">
+                                                    瘋市集 Wild Market
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=海或" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 海或</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=瘋市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 瘋市集</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=花蓮" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 花蓮</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機 Slider End -->
+        </div>
+    </section>
+    <!-- 休閒市集 End -->
+    <!-- 主題活動 Start -->
+    <section class="about-section about-style-5 p2020" style="background-image:linear-gradient(180deg, #eee, #fff);">
+        <div class="container">
+            <div class="col-12"
+                style="border-radius: 3px;background:#E9A6C0;color:#fff;margin:20px 0px;box-shadow: 0px 0px 2px 2px #cccccc;">
+                <div style="padding:10px;font-weight:900;font-size:20px;">主題活動</div>
+                <div style="top: 5px;right: 5px;position: absolute;padding:10px;font-weight:400;font-size:14px;"><a
+                        style="color:#fff;" href="model.php?ID=2">More +</a></div>
+            </div>
+            <div class="col-12 row hidden-xs" style="margin:0;padding: 0;">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=520&PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/803524810.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+    
+                            <div class="row dhreat"><img onclick="loginmember(520);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_520"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 2220</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=520&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">S2O Taiwan Songkran
+                                        Music Festival
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 08 / 27 - 2022 / 08 / 28</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">臺北市大佳河濱公園</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=海或" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># S2O</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=瘋市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 大佳河濱公園</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=花蓮" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台北</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=657&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/415442390.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+    
+                            <div class="row dhreat"><img onclick="loginmember(657);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_657"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1218</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=657&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">2022 ZERO FESTIVAL利洛音樂節
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 08 / 27 - 2022 / 08 / 28</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">台中森渼原ALIVE Glamping Base</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=台南" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台中森渼原</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=荏苒市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># ALIVE Glamping Base</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=荏苒市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台中</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=628&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/784210210.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+    
+                            <div class="row dhreat"><img onclick="loginmember(628);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_628"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1415</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=628&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">山林涼派對
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 08 / 20 - 2022 / 08 / 20</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">靜月居露營區</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">風向行銷有限公司</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=夏日ICE集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 山林涼派對</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=愛市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 新竹</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=台南" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 靜月居露營區</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=584&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/194249650.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+    
+                            <div class="row dhreat"><img onclick="loginmember(584);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_584"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 2039</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=584&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">2022 臺灣文博會
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 08 / 05 - 2022 / 08 / 14</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">高雄市流行音樂中心</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">高雄市政府文化局</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=新竹" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 臺灣文博會</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=下竹町老樹" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 高雄</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=文創市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 流行音樂中心</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=521&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/136072170.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+    
+                            <div class="row dhreat"><img onclick="loginmember(521);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_521"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1220</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=521&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">2022大稻埕情人節
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 07 / 30 - 2022 / 07 / 30</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">大稻埕</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred">台北市觀傳局</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=駁二藝術特區" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 大稻埕情人節</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=大義倉庫" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台北市</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 badboy pinponx">
+                    <div class="col-12"
+                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                        <div class="timeline-body sketchyk">
+                            <a href="article1.php?ID=517&amp;PID=2">
+                                <div class="imgxx"
+                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; height: 300px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/964436720.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; background-repeat: no-repeat; background-size: contain;">
+                                </div>
+                            </a>
+    
+                            <div class="row dhreat"><img onclick="loginmember(517);" src="/img/icon/收藏.svg"
+                                    class="ghrae ihdn_517"></div>
+                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2">
+                                <div
+                                    style="color:#fff;font-size:16px;display:inline;padding-top: 3px;padding-left: 10px;">
+                                    <span class="hidden-sm hidden-xs">人氣值</span> 1394</div>
+                            </div>
+                            <div class="col-12"
+                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                <a href="article1.php?ID=517&amp;PID=2">
+                                    <div class="lineline2" style="max-height:60px;min-height:60px;">TaiChill City台秋祭
+                                    </div>
+                                </a>
+                                <div class="lineline1">
+                                    <div>活動時間 |<div class="kdnred">2022 / 07 / 23 - 2022 / 07 / 24</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動地點 |<div class="kdnred">台中驛鐵道文化園區</div>
+                                    </div>
+                                </div>
+                                <div class="lineline1">
+                                    <div>活動單位 |<div class="kdnred"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 row flex-nowrap" style="margin:20px 0px;max-height:36px;overflow-y:hidden;">
+                                    <a href="/zh/sq.php?hash=兜市集" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># TaiChill City</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash= 阿嬤妳看市集廊道" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台秋祭</div>
+                                    </a>
+                                    <a href="/zh/sq.php?hash=台南開元公園" style="text-decoration:none;" class="">
+                                        <div class="grayback2"># 台中</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機 Slider Start -->
+            <div class="col-12 row hidden-sm hidden-lg hidden-md dqdw" style="margin:0;padding: 0;">
+                <div id="flexslider" class="flexslider jdmn col-12" style="padding: 0px;">
+                    <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                        <ul class="slides">
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=517&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/964436720.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+            
+                                            <div class="row dhreat"><img onclick="loginmember(517);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_517" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 2220</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">S2O Taiwan Songkran
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 08 / 27 - 2022 / 08 / 28
+                                                </div>
+                                                <div class="lineline3">
+                                                    臺北市大佳河濱公園
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=兜市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># S2O</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash= 阿嬤妳看市集廊道" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 大佳河濱公園</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=台南開元公園" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 台北</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=520&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/803524810.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+            
+                                            <div class="row dhreat"><img onclick="loginmember(520);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_520" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 14862</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">2022 ZERO FESTIVAL利洛音樂節
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 08 / 27 - 2022 / 08 / 28
+                                                </div>
+                                                <div class="lineline3">
+                                                    台中森渼原ALIVE Glamping Base
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=海或" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 台中森渼原</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=瘋市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># ALIVE Glamping Bas</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=花蓮" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 台中</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=657&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/415442390.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+            
+                                            <div class="row dhreat"><img onclick="loginmember(657);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_657" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1415</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">山林涼派對
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 08 / 20 - 2022 / 08 / 20
+                                                </div>
+                                                <div class="lineline3">
+                                                    靜月居露營區
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=台南" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 山林涼派對</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=荏苒市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 新竹</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=荏苒市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 靜月居露營區</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=628&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/784210210.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+            
+                                            <div class="row dhreat"><img onclick="loginmember(628);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_628" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1166</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">2022 臺灣文博會
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 08 / 05 - 2022 / 08 / 14
+                                                </div>
+                                                <div class="lineline3">
+                                                    高雄市流行音樂中心
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=夏日ICE集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 臺灣文博會</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=愛市集" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 高雄</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=台南" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 流行音樂中心</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=584&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/194249650.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+            
+                                            <div class="row dhreat"><img onclick="loginmember(584);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_584" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1220</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">2022大稻埕情人節
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 07 / 30 - 2022 / 07 / 30
+                                                </div>
+                                                <div class="lineline3">
+                                                    大稻埕
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=新竹" style="text-decoration:none;" class="">
+                                                        <div class="grayback2"># 大稻埕情人節</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=下竹町老樹" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 台北市</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 badboy pinponx">
+                                    <div class="col-12"
+                                        style="box-shadow: 0px 0px 2px 2px #cccccc;background:#fff;padding:0;border-radius:5px;">
+                                        <div class="timeline-body sketchyk">
+                                            <a href="article1.php?ID=521&amp;PID=2">
+                                                <div class="imgxx"
+                                                    style="border: 1px solid rgb(119, 119, 119); margin: 0px; width: 100%; background-position: center center; background-image: url('https://www.activity.com.tw/UserFiles/worksImages/136072170.png'); overflow-y: hidden; border-radius: 5px 5px 0px 0px; height: 300px; background-repeat: no-repeat; background-size: contain;">
+                                                </div>
+                                            </a>
+            
+                                            <div class="row dhreat"><img onclick="loginmember(521);"
+                                                    src="/img/icon/收藏.svg" class="ghrae ihdn_521" draggable="false">
+                                            </div>
+                                            <div class="row eyes"><img src="/img/icon/眼睛.svg" class="ghrae2"
+                                                    draggable="false">
+                                                <div class="ineye"> 1394</div>
+                                            </div>
+                                            <div class="col-12"
+                                                style="background:#fff;margin-bottom:20px;padding:0;border-radius:5px;padding-bottom:10px;">
+                                                <div class="lineline2" style="min-height:45px;">TaiChill City台秋祭
+                                                </div>
+                                                <div class="lineline3">
+                                                    2022 / 07 / 23 - 2022 / 07 / 24
+                                                </div>
+                                                <div class="lineline3">
+                                                    台中驛鐵道文化園區
+                                                </div>
+                                                <div class="col-12 row flex-nowrap"
+                                                    style="margin:5px 0px;max-height:36px;overflow-y:hidden;padding:0 5px;white-space: nowrap;">
+                                                    <a href="/zh/sq.php?hash=駁二藝術特區" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># TaiChill City</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=大義倉庫" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 台秋祭</div>
+                                                    </a>
+                                                    <a href="/zh/sq.php?hash=高都青商會" style="text-decoration:none;"
+                                                        class="">
+                                                        <div class="grayback2"># 台中</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機 Slider End -->
+        </div>
+    </section>
+    <!-- 主題活動 End -->
+    <!-- Footer Start -->
+    <footer class="footer py-4" style="background:#E9A6C0;border-top: 0;margin-top:60px;">
+        <div class="container">
+            <div class="col-12 row" style="margin:0;">
+                <div class="col-sm-6" style="margin-bottom:20px;">
+                    <div class="row align-items-end">
+                        <div class="col-12 text-center text-md-right" style="color:#fff;">
+                            <a style="color:#fff;" href="/zh/about2.php?ID=1">
+                                <div class="d-line" style="display:inline;margin-right:20px;">關於我們</div>
+                            </a>
+                            <a style="color:#fff;" href="/zh/about2.php?ID=2">
+                                <div class="d-line" style="display:inline;margin-right:20px;">廣告刊登</div>
+                            </a>
+                            <a style="color:#fff;" target="_blank"
+                                href="https://facebook.com/msg/105464601809856/?show_interstitial=0&amp;mdotme_uri=https%3A%2F%2Fm.me%2F105464601809856%3Ffbclid%3DIwAR0aMjKsYIRRVdZ-6sxpZzhMiIWWXPzbWmJneb-OJt8hrjTV_0xO9ObL9as&amp;handler=m.me&amp;referer=https%3A%2F%2Fm.facebook.com%2F&amp;refsrc=deprecated&amp;_rdr">
+                                <div class="d-line" style="display:inline;margin-right:20px;">線上客服</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" style="margin-bottom:20px;">
+                    <div class="row align-items-start">
+                        <div class="col-12 text-center text-md-left" style="color:#fff;">
+                            <a style="color:#fff;" target="_blank" href="https://www.facebook.com/展覽活動懶人包-105464601809856/">
+                                <div class="d-line" style="display:inline;margin-right:20px;">Facebook</div>
+                            </a>
+                            <a style="color:#fff;" target="_blank" href="https://www.instagram.com/walking_potato_tw/">
+                                <div class="d-line" style="display:inline;margin-right:20px;">Instagram</div>
+                            </a>
+                            <a style="color:#fff;" target="_blank" href="https://lin.ee/kcET2up">
+                                <div class="d-line" style="display:inline;">Line</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" style="margin-bottom:20px;display:none;">
+                    <div class="row align-items-end">
+                        <div class="col-12 text-right" style="color:#fff;">電話：<a style="color:#fff;" href="tel:-2222">(-)
+                                2222</a> | 傳真：(-) 22255562</div>
+                    </div>
+                </div>
+                <div class="col-12 " style="margin-bottom:20px;">
+                    <div class="row align-items-center">
+                        <div class="col-12 " style="color:#fff;">Copyright © 2022 活動‧市集‧展覽 懶人包｜全台資訊第一站 版權所有</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 手機版 footer 至底快捷 -->
+    <div class="dksmmbottom hidden-lg hidden-md hidden-sm row">
+        <div class="col align-self-center text-center" style="padding:0;">
+            <a target="_blank" href="https://www.instagram.com/walking_potato_tw/">
+                <img src="/img/icon/icon-08.svg" class="" style="width:23px;">
+                <div style="font-size:12px;color:rgb(207 103 143);margin:0 auto;width:100%;font-weight:700;">Instagram</div>
+            </a>
+        </div>
+        <div class="col align-self-center text-center" style="padding:0;">
+            <a target="_blank" href="https://lin.ee/kcET2up">
+                <img src="/img/icon/icon-20.svg" class="" style="width:23px;">
+                <div style="font-size:12px;color:rgb(207 103 143);margin:0 auto;width:100%;font-weight:700;">LINE</div>
+            </a>
+        </div>
+        <div class="col align-self-center text-center" style="padding:0;">
+            <a target="_blank" href="https://www.facebook.com/展覽活動懶人包-105464601809856/">
+                <img src="/img/icon/icon-07.svg" class="" style="width:23px;">
+                <div style="font-size:12px;color:rgb(207 103 143);margin:0 auto;width:100%;font-weight:700;">Facebook</div>
+            </a>
+        </div>
+        <div class="col align-self-center text-center" style="padding:0;">
+            <a href="/zh/member.php">
+                <div><img src="/img/icon/icon-17.svg" class="" style="width:23px;"></div>
+                <div style="font-size:12px;color:rgb(207 103 143);margin:0 auto;width:100%;font-weight:700;">會員中心</div>
+            </a>
+        </div>
+    </div>
+    <!-- 置頂按鈕 -->
+    <a href="" id="toTop" style="background:url('/img/icon/回頂部.svg');" title="返回頂部"></a>
+    <!-- 左下粉絲團 -->
+    <a href="https://www.facebook.com/展覽活動懶人包-105464601809856/" target="_blank" id="" class="hfb hidden-xs" style="width:40px;height:40px;" title="FB粉絲團"></a>
+    <a href="https://lin.ee/kcET2up" target="_blank" id="" class="hLine hidden-xs" style="width:40px;height:40px;" title="LINE"></a>
+    <a href="https://www.instagram.com/walking_potato_tw/" target="_blank" id="" class="hIG hidden-xs" style="width:40px;height:40px;" title="IG"></a>
+    <!-- Footer End -->
+
+    <script>
+        // 調整 card 內圖片大小
+        function dds(){
+            var xx98=$(".pinponx").width();
+            var gh98= xx98*0.75;
+            var gh988= xx98*0.75;
+            $(".imgxx").height(gh98);
+            $(".imgxxx").height(gh988);
+        }
+        // 請使用者登入
+        function memberLogin (id) {
+            alert("請先登入會員");
+            return false;
+        }
+        // 使用者加入/移除收藏
+        function memberCollection (id) {
+            $.ajax({
+                type: 'POST',
+                url: '/zh/like.php',
+                data: { 'aID': id },
+                dataType: 'json',
+                success: function (result) {
+                    var msg = result['msg'] ? result['msg'] : '';
+                    if (result['success']) {						 
+                        if (result['msg'] == 0) {
+                            $('.ihdn_' + id).attr('src', '/img/icon/收藏2.svg');
+                            alert('加入收藏');
+                        }
+                        if (result['msg'] == 1){
+                            $('.ihdn_' + id).attr('src', '/img/icon/收藏.svg');
+                            alert('移出收藏');
+                        }
+                    }
+                }
+            })
+        }
+        $(window).load(function () {
+            function openMobileSearch() {
+                if (document.getElementById('mobileSearch').style.display == "") {
+                    document.getElementById('mobileSearch').style.display = 'none';
+                } else {
+                    document.getElementById('mobileSearch').style.display = '';
+                }
+            }
+            // Fix Flexslider Start
+            $('#banner').flexslider({
+                slideshowSpeed: 5000,
+                animation: "slide"
+            });
+            // Fix Flexslider End
+            // 休閒市集
+
+            // 縮放 6 宮格內的圖片大小
+            dds();
+            window.addEventListener('resize', function () {
+                dds();
+            });
+            // (共用)手機版卡片 slider
+            var vys = ($(window).width()-24) / 2;
+            $('.jdmn').flexslider({
+                // slideshow: true,
+                animation: "slide",
+                minItems: 2,
+                maxItems: 2,
+                itemWidth: vys,
+                animationLoop: true
+            });
+            $('a#toTop').click(function(){
+                var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+                $body.animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        })
+
+    </script>
 </body>
 
 </html>
